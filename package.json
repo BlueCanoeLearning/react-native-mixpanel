@@ -1,6 +1,6 @@
 {
   "name": "react-native-mixpanel",
-  "version": "0.0.16",
+  "version": "2.7.5",
   "description": "A React Native wrapper for Mixpanel tracking",
   "main": "index.js",
   "repository": {
@@ -13,6 +13,9 @@
     "tracking",
     "mixpanel"
   ],
+  "peerDependencies": {
+    "react-native": ">=0.61.5"
+  },
   "author": "Davide Scalzo <davidescalzo@gmail.com>",
   "license": "MIT",
   "bugs": {
