@@ -385,7 +385,7 @@
  @param properties      properties dictionary
  */
 - (void)track:(NSString *)event properties:(NSDictionary *)properties;
-
+- (void)track:(NSString *)event properties:(NSDictionary *)properties completion:(void(^)(BOOL success, NSString * message))callback;
 
 /*!
  @method

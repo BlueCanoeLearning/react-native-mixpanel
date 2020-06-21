@@ -60,10 +60,11 @@ RCT_EXPORT_METHOD(trackWithProperties:(NSString *)event properties:(NSDictionary
 
 // track with properties & completion handler
 RCT_EXPORT_METHOD(trackWithProperties:(NSString *)event properties:(NSDictionary *)properties completion:(RCTResponseSenderBlock)completion) {
-    [mixpanel track:event properties:properties completion: ^void (BOOL success, (NSString*)message) {
-            completion(@[@(success), message])
+    [mixpanel track:event properties:properties completion: ^(BOOL success, NSString *message) {
+        completion(@[@(success), message]);
     }];
 }
+
 // flush
 RCT_EXPORT_METHOD(flush) {
     [mixpanel flush];
