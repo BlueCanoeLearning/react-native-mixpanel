@@ -1,7 +1,7 @@
 declare module "react-native-mixpanel" {
     export function getDistinctId(callback: (distinctId: string) => void): void;
-    export function getUserId(callback: (userId: string) => void): void;
-    export function getAnonymousId(callback: (anonymousId: string) => void): void;
+    // export function getUserId(callback: (userId: string) => void): void;
+    // export function getAnonymousId(callback: (anonymousId: string) => void): void;
     export function sharedInstanceWithToken(token: string): void;
     export function track(event: string): void;
     export function trackWithProperties(event: string, properties: {}): void;
