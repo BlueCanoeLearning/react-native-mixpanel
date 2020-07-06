@@ -73,7 +73,7 @@
  This is null until <code>identify:</code> is called and is set
  to the id with which identify is called with.
  */
-@property (atomic, readonly, copy) NSString *userId;
+// @property (atomic, readonly, copy) NSString *userId;
 
 /*!
  @property
@@ -87,7 +87,7 @@
  if that is not available we’ll use the device’s identifierForVendor UUIDString,
  and finally if that is not available we will generate a new random UUIDString.
  */
-@property (atomic, readonly, copy) NSString *anonymousId;
+// @property (atomic, readonly, copy) NSString *anonymousId;
 
 /*!
  @property
