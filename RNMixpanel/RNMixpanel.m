@@ -36,6 +36,14 @@ RCT_EXPORT_METHOD(getDistinctId:(RCTResponseSenderBlock)callback) {
     callback(@[mixpanel.distinctId ?: @""]);
 }
 
+RCT_EXPORT_METHOD(getUserId:(RCTResponseSenderBlock)callback) {
+    callback(@[mixpanel.userId ?: @""]);
+}
+
+RCT_EXPORT_METHOD(getAnonymousId:(RCTResponseSenderBlock)callback) {
+    callback(@[mixpanel.anonymousId ?: @""]);
+}
+
 // get superProp
 RCT_EXPORT_METHOD(getSuperProperty: (NSString *)prop callback:(RCTResponseSenderBlock)callback) {
     NSDictionary *currSuperProps = [mixpanel currentSuperProperties];

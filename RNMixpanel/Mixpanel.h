@@ -66,6 +66,33 @@
  @property
 
  @abstract
+ The user ID with which <code>identify:</code> is called with.
+
+
+ @discussion
+ This is null until <code>identify:</code> is called and is set
+ to the id with which identify is called with.
+ */
+@property (atomic, readonly, copy) NSString *userId;
+
+/*!
+ @property
+
+ @abstract
+ The default anonymous Id / distinct Id given to the events before identify.
+
+ @discussion
+ A default distinct ID is a string that uniquely identifies the anonymous activity.
+ By default, we’ll use the device’s advertisingIdentifier UUIDString,
+ if that is not available we’ll use the device’s identifierForVendor UUIDString,
+ and finally if that is not available we will generate a new random UUIDString.
+ */
+@property (atomic, readonly, copy) NSString *anonymousId;
+
+/*!
+ @property
+
+ @abstract
  Current user's name in Mixpanel Streams.
  */
 @property (atomic, copy) NSString *nameTag;

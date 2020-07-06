@@ -280,4 +280,14 @@ public class RNMixpanelModule extends ReactContextBaseJavaModule implements Life
     public void getDistinctId(Callback callback) {
         callback.invoke(mixpanel.getDistinctId());
     }
+
+    @ReactMethod
+    public void getUserId(Callback callback) {
+        callback.invoke(mixpanel.getUserId());
+    }
+
+    @ReactMethod
+    public void getAnonymousId(Callback callback) {
+        callback.invoke(mixpanel.getAnonymousId());
+    }
 }
