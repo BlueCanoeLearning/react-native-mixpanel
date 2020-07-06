@@ -44,5 +44,5 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:0.19.+'
-    implementation "com.mixpanel.android:mixpanel-android:5.+"
+    implementation "com.mixpanel.android:mixpanel-android:5.8.4"
 }
