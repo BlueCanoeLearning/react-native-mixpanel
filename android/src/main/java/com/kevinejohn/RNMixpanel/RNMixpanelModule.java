@@ -39,7 +39,6 @@ public class RNMixpanelModule extends ReactContextBaseJavaModule implements Life
     @ReactMethod
     public void sharedInstanceWithToken(final String token) {
         mixpanel = MixpanelAPI.getInstance(reactContext, token);
-
     }
 
 
